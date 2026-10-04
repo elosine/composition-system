@@ -395,6 +395,12 @@ the loads · the screenshots; everything that is text is the AI's):*
   composition to do."* Taken up when he has time; its home the collation (9). `flag`.
 - **4.10 The three how-tos written from the record** (RUNNING_LOG §20 … §42: UVI · Kontakt · Spitfire) as the first pages of
   4.9 — cheap, Opus, from what is already logged. `todo`.
+  — 2026-10-04: ☑ WRITTEN, at his word, during the protocol's first run (`decibel_TENOR_2026` RUNNING_LOG §18 · §44) — not three
+  pages by plugin family but FOUR by job, in `protocol/howto/`: `rack.md` (the ports, the rack file, the tracks, the first sound) ·
+  `kontakt.md` (Xsample · Ricotti: slots, channels, CC7, articulations, ranges, round robin) · `spitfire-aro.md` · `measuring.md`.
+  UVI is NOT written (no piece since #6 used it; its record is named in `howto/README.md`). What the run changed in steps 4.1 … 4.5
+  and 5 is IN those pages and in that piece's `docs/PROTOCOL_DEVIATIONS.md` — the steps' own wording is revised at the harvest, his
+  word: *"we'll revise the whole system when we have a little bit more time."*
 - **4.11 Written into the protocol** — this section. ☑ 2026-10-03.
 
 ---

@@ -98,6 +98,9 @@ piece #5 (the harvest's H-33). **The one piece-neutral copy of each is not made 
 
 *The shelf is not opened yet* — the protocol's 9.5, filled when the composer takes up his flags (4.9 · 5.10). Its seeds:
 
+- **the how-to pages** — here: `protocol/howto/` (`rack` · `kontakt` · `spitfire-aro` · `measuring`) · written 2026-10-04 · used at a new piece's containers 4 · 5. The tools they name: `decibel_TENOR_2026` `tools/` · `reaper/` · `probes/`.
+- `decibel_TENOR_2026/bank/instrument_card.json` · `bank/trims.json` · `bank/ricotti_catalog.json` · `bank/aro_states/` — the Decibel rack measured (2026-10-04)
+
 - `septet_LGMF_2026/bank/instrument_card.json` @ `33ba534` — every instrument measured on the channels the piece plays
 - `septet_LGMF_2026/docs/RACK_SETTINGS.md` · `docs/SAMPLER_QUIRKS.md` @ `33ba534`
 - the harvest's H-35 — piece #5 measured all five Xsample instruments at ±1 semitone of bend
