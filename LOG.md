@@ -13,3 +13,4 @@
   piece #6's. This log's first line corrected: the skeletons are eleven docs. (`septet_LGMF_2026` RUNNING_LOG §801)
 - 2026-10-03 — **The protocol: 10.7 · 2.8 ☑** — the cross-piece notes written into the composer's user-level `CLAUDE.md` at his word
   (three dated sections; this repo's pointer among them). (`septet_LGMF_2026` RUNNING_LOG §802)
+- 2026-10-03 — **The shared live-electronics engine has a repo:** `live-electronics-system` (the composer's name; public; pushes after every commit) — the module manifest's first member (9.11); INDEX updated. Planned with him in piece #6's lab journal (`septet_LGMF_2026` RUNNING_LOG §805 … §814): twelve parts, part 1 done. (`septet_LGMF_2026` RUNNING_LOG §814)

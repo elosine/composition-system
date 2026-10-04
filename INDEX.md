@@ -18,7 +18,7 @@
 | 5 | `septet_2026` | the Tempus septet | `ba318e1` |
 | 6 | `septet_LGMF_2026` | _Recombination_, the Lake George septet | `33ba534` |
 
-Beside them: `composition-planning-and-notes` (the composer's planning lists) · `live-electronics-engine`
+Beside them: `composition-planning-and-notes` (the composer's planning lists) · `live-electronics-engine` · `live-electronics-system` (the shared live-electronics engine of the three electronics pieces — a module set, not a piece; see The module manifest)
 (the sandbox for the live-electronics kind of start).
 
 ## The protocol
@@ -104,6 +104,8 @@ piece #5 (the harvest's H-33). **The one piece-neutral copy of each is not made 
 ## The module manifest
 
 *Not written yet* — the protocol's 9.11. Until it says a module can travel alone, the rule is CARRY ALL, USE SOME.
+
+- **The shared live-electronics engine — the manifest's FIRST MEMBER:** `live-electronics-system` (`github.com/elosine/live-electronics-system`, public, pushes after every commit) · made 2026-10-03 · its `docs/PLAN.md` is the plan of the engine for the three electronics pieces (the Decibel piece · the Switch~ piece · the improviser piece); its `docs/SEAMS.md` names where it plugs into a piece's stack, its `docs/TAKE.md` how a piece takes it (a git submodule) · planned in `septet_LGMF_2026` RUNNING_LOG §805 … §814.
 
 ## The backlog
 
