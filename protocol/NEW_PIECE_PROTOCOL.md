@@ -1,0 +1,908 @@
+# THE NEW-PIECE PROTOCOL — a regular, expandable, flexible start
+
+> **THE HOME COPY — the authoritative protocol from 2026-10-03.** Moved in from
+> `septet_LGMF_2026/docs/plans/NEW_PIECE_PROTOCOL.md` @ `33ba534` (step 9.9). That file stays there, frozen, as the
+> record of the drafting. **In this copy a bare `§N` (lab journal), `LG-N`, `H-N`, `D-N`, `PLAN …` or `docs/…` path is
+> piece #6's — `septet_LGMF_2026` — and "this repo" / "here" in the text means that repo,** unless it says otherwise.
+> From here it changes only by a dated entry under the step it touches (10), with one line in this repo's `LOG.md`.
+
+**v1 — 2026-10-03 — all ten containers written (RUNNING_LOG §786 … §798), every goal agreed with him; the first run is the
+Decibel piece's set-up (his to-do's step 2); the version rule is 10.3.**
+
+> Drafted 2026-10-03 on Fable WITH the composer, under `docs/PLANNING_METHOD.md` — phase 1 (RUNNING_LOG §786),
+> the top line agreed, then one container at a time. His to-do for it: `composition-planning-and-notes/docs/things/
+> create-a-methodology-for-starting-a-new-piece.md` (► 1 Draw Up the Plan · 2 Set Up the Decibel Piece · 3 Set Up
+> the Switch~ Piece). This file lives here, beside the last port's record (`PORT_FROM_TEMPUS.md`), until the protocol
+> has a home that is not a piece — that home is his call, later.
+>
+> **His intention (§786, his words):** *"a regular protocol for starting a new piece … expandable and flexible"* —
+> expandable: *"as we're doing it, we took lessons from the last build and are adding some things"* · flexible:
+> *"being able to incorporate and adjust to new requirements of the new piece"* · modest enhancements welcome now,
+> *"maybe not doing giant projects"* · and a COLLATION: *"gather some things up and collate them somewhat so that the
+> next piece can just move forward without having to do a full search and retrieval."*
+
+**The rules of this file:** stable IDs (a container keeps its number; its steps are `N.m`) · one container laid out at
+a time, with him, and written here as agreed · the steps a cold model could run · a container reads `top line only`
+until it is laid out · what is one-time (this plan's work) is kept apart from what is recurring (the protocol's). **From container 7 on (his word
+2026-10-03, *"we can skip the sub steps from now on"*): the GOAL is agreed with him; the steps are the AI's, written without a
+round trip, his to reverse in the file.**
+
+**The kinds of start the protocol must hold** (§786 · §789) — a piece's PROFILE, step 2.1: **copy-forward** — the six
+pieces so far: the stack copied byte-exact, the palette rewritten · **from a sandbox** — the live-electronics kind: a
+sandbox repo (`live-electronics-engine`) stays alive for experiments, a piece repo takes the BASIC MACHINERY and grows
+piece-specific tools (his note, for the improvisation with live electronics for TENOR) · **fresh** — a new kind of
+score with its own ground truth (the Decibel piece may be one). The UNIVERSAL layer (1 · 2 · 9 · 10) is common to all;
+the other two layers are taken in part, whole or not at all — the top line below.
+
+**His process note, 2026-10-03 (LG-346):** for the three electronics pieces the order is — the three repos set up with the
+UNIVERSAL layer first, then ONE live-electronics engine with its notation and graphics designed for all three, then put into
+each. Two questions for this plan, open: WHERE that shared engine lives (the home question; §5 one shared engine, its first
+member) and HOW it is ported into three pieces (the module boundary, 9; the from-a-sandbox kind, 2.1). Taken up when he reaches them.
+
+---
+
+## The top line — the ten containers, in THREE LAYERS (his (a), 2026-10-03, §789)
+
+*(the IDs in brackets: where this piece did it — PLAN § 0 … § 4; "new" = not in the last port. The numbers are stable; the
+layers group them. A piece takes the UNIVERSAL layer always, and then some, all or none of the other two — its PROFILE,
+step 2.1. Within a layer the order is the order things happen.)*
+
+**UNIVERSAL — every piece, whatever it is**
+
+1. **The harvest** — what the last piece hands to the next. *(new)* — **► laid out below**
+2. **The repo and its kit** — the profile, the new repo, the names (title · session · piece chain · package · Reaper
+   guard · ports), the docs kit, the git rules. *(0a)* — **► laid out below**
+9. **The collation** — the cross-piece reference kit with an index: colours · engraving rules · device sheets · the
+   laws · the manuals · the maps · the MODULE MANIFEST (below) · THE INSTRUMENT KNOWLEDGE BASE (4.9, his flag, LG-344). Not exhaustive. *(new — his point)* — **► laid out below**
+10. **The protocol's upkeep** — the last step of every start: what the run taught goes back into the protocol.
+    *(new; the other end of 1)* — **► laid out below**
+
+**THE INSTRUMENT — the sound side**
+
+3. **The engine copied forward** — composer app · sandbox · notation engine · print · video · tools · probes · the
+   Reaper bridge: byte-exact, proven whole, then the re-palette. *(0b)* — **► laid out below**
+4. **The instruments** — the instrumentation → the libraries (acquire · manuals · maps · key switches) → the recipes
+   → loopMIDI ports → the Reaper rack. *(0c · 0e)* — **► laid out below**
+5. **The calibration** — balance · velocity remap · fader curves · bend and technique ranges · sample lengths; the
+   dynamics law applied. *(0d; reworked as 1b here — six bugs that outlived the first pass)* — **► laid out below**
+7. **The composing tools made the piece's** — which tools, and the per-instrument data each one needs; adapted as
+   compositional need arises, not all up front. *(phase 1 here, 1c … 1u)* — **► laid out below**
+
+**THE SCORE — the score type and its deliverables, laid out PER SCORE TYPE**
+
+6. **The notation set-up** — the ensemble registry (clefs · transposition · staves · groups), the rules registry
+   carried + what the new ensemble needs (a new staff type), the batteries, the exporters run, save → IR proved.
+   *(0g · 0i · 2a · 2c)* — **► laid out below**
+8. **The deliverables pipeline** — audio render · film · print (the gates; the cover and instructions templates) · the
+   notes page · archive + tags · the submission package. *(2b · 3 · 4)* — **► laid out below**
+
+**SCORE TYPES — a category of their own (§789).** The first member is THE ANIMATED SCROLLING SCORE: the IR · the rules
+registry · the layout and render · the film · the print (pieces #4 … #6). A new kind of score — the Decibel piece may want
+one — is a second member, in one of two shapes, and only that piece's design says which: a new RENDERING of the same
+composed material, reading the IR (built as "the single source for every downstream score", D9; cheap to add) · or a new
+way of composing and notating with its own ground truth — its own module, the sound side used in part or not at all.
+Containers 6 and 8 are laid out once per type; a piece names its type(s) in its profile.
+
+**MODULES — "port the useful ones" (§789).** Today the unit of port is the whole engine, byte-exact: the modules are
+coupled (one page loads forty scripts; a missing one is a 404), carrying all costs nothing, excising costs a lot. The rule
+for now: **CARRY ALL, USE SOME.** A module-level port needs the boundary named — a MANIFEST of modules, what each needs
+and what depends on it — on container 9's list as the modest architecture enhancement he is open to. Not built now.
+
+**What the AI added at phase 1, agreed (§786):** the protocol needs a HOME that is not a piece · THE HARVEST already
+exists per piece and is step 1 · NAME THE BOUNDARY system vs. piece (the collation's spine; the quiet first step toward
+one shared engine, parked in RUNNING_LOG §5, without committing to it) · TWO RUNS are coming — the first writes the
+protocol, the second tests it.
+
+**Never done in this piece, PLACED 2026-10-03 (10.6):** 0f the AI's MIDI generation path = 8.1's capture → export → render route and
+5's probes · 0h the gate that closes phase 0 (skipped at his word, D14) = 4.6 the first sound.
+
+---
+
+## 1. The harvest — `written 2026-10-03` (agreed with him, RUNNING_LOG §786 · §787)
+
+**Result when done:** one short, dated list in the finished piece — *what this piece hands to the next* — each item
+with its source §, its kind (a tool fix · a rule · a method · a lesson · a doc), and a verdict: take now · later ·
+leave. The protocol reads it before anything is copied; the "take now" items become steps inside the other containers.
+
+**The data (2026-10-03):** pieces #1 … #3 have nothing to harvest from (no NITS, no lessons file; what they hold is
+material — the collation's job, 9) · the kit that makes a harvest possible is a product of #4 … #6 (#4: NITS 45
+bullets, SHAPE_LESSONS · #5: NITS 112, MORPH_NOTES, AI_METHODOLOGY · #6: NITS 65, MORPH_NOTES, five Learned lists) ·
+only this piece has a NAMED harvest (NITS § HELD FOR THE NEXT PIECE OR THE POSTMORTEM, four items at his word) · one
+harvest file already travels (MORPH_NOTES, carried whole from #5) · a harvest is a SELECTION, not a carry — the
+copy-forward already carries everything.
+
+**Recurring — the protocol's step 1, run at the START of each new piece on the piece just finished:**
+
+- **1.1 The sources, named once.** NITS (its § HELD and its open bullets) · MORPH_NOTES §4 (the digest; §3 is the
+  verbatim log behind it) · the journal §2's Learned lists · the journal's "offered, not taken up" and "the AI's
+  calls, his to reverse" rows · PLAN items left `todo`. No model searches for them again.
+- **1.2 The collect.** One pass over the sources into one file in the finished piece — `docs/HARVEST.md` — one line
+  per item: the item · its source § · its kind · the proposed verdict. The AI does it; he gets one read.
+- **1.3 The triage, his read.** take now · later · leave. A "take now" becomes a step in its container (a rule → 6 the
+  notation set-up; a tool fix → 3 the engine or 7 the tools; a method → 2 the kit, or the protocol itself). A
+  "later" stays in the file, dated. A "leave" is struck with its reason.
+- **1.4 The old pieces.** No pass of their own. When the collation (9) sends us to one, the same line shape goes into
+  the same file.
+
+**Two calls, his to reverse (agreed 2026-10-03):** the AI triages and proposes the verdicts, he reads the list — not a
+decision per bullet · older pieces are harvested only where the collation sends us.
+
+**The feeder, during a piece (already a standing practice here):** NITS § HELD (his word *"hold on to these for the
+next piece or postmortem"*, §701) · MORPH_NOTES §3 → §4 · the journal's Learned list at each close. The protocol names
+them as what step 1 reads; nothing new to do during the piece.
+
+**One-time — this plan's work, not the protocol's:**
+
+- **1.5 Written into the protocol** — this section. ☑ 2026-10-03.
+- **1.6 The first run, on _Recombination_** — 1.2 and 1.3 run now, as the test of the step and as the real harvest
+  the Decibel piece will read: `docs/HARVEST.md` in this repo. ☑ 1.2 done 2026-10-03 (§787) · 1.3 his read 2026-10-03, *"All as
+  proposed"* — 35 take now · 12 later · 9 leave stand (§788).
+- **1.7 The backfill of the old pieces** — only as 1.4 says; nothing scheduled.
+
+---
+
+## 2. The repo and its kit — `written 2026-10-03` (agreed with him, RUNNING_LOG §788 · §789)
+
+**What this is:** the first thing done for a new piece, before any code is copied — a new repo with its names fixed and
+its working documents in place, so the session skills work from minute one and every decision survives a clear.
+
+**Result when done:** a new repo exists, named, with the kit installed and the names fixed. The AI can `/session-start`
+in it and find everything it needs. No code yet.
+
+**The data (2026-10-03, §788):** what the kit was here (PLAN 0a, RUNNING_LOG §6): carried WHOLE with one provenance line
+— AI_METHODOLOGY · SESSION_HYGIENE · PLANNING_METHOD · MORPH_NOTES · .gitignore · .gitattributes · carried with a named
+change — HOW_WE_WORK · SESSION_PROTOCOL · the checkpoint / postclear commands · written FRESH — CLAUDE.md · README · the
+journal (seven sections, §3's principles carried) · PLAN · PLANNER · RUNNING_LOG · NITS · COMPOSITION_NOTES · the
+standing practices checked HEADING BY HEADING against the last piece's CLAUDE.md (the port before had silently dropped
+THE RHYTHM) · the ports by the lineage's rule · NOT in the kit: launch.json and the tool docs — they travel with the code
+(3). The names of the last port (P6): the session default · the piece chain · the package name · the Reaper guard · the
+ports · the loopMIDI prefix; the title came a week later. `docs/` here today: 33 files + 4 dirs of three kinds — the
+standing method docs · the piece's own record · the tool docs that describe the code.
+
+**Three calls, his to reverse (agreed 2026-10-03):** the kit is a TEMPLATE, not a copy of the last piece's docs — the
+method docs carried whole, the record docs started empty from skeletons · THE PROTOCOL ITSELF BECOMES THE NEW PIECE'S
+PLAN § 0 — containers 2 … 8, for the piece's profile; one document, not two · the AI's memory notes are PER REPO and a
+new repo starts with none — the cross-piece ones move to his user-level CLAUDE.md (2.8).
+
+**Recurring — the protocol's step 2, at every start:**
+
+- **2.1 The profile.** The kind of start (copy-forward · from a sandbox · fresh) · which layers (the instrument · the
+  score · both · neither) · which score type(s) (the animated scrolling score · a new type · none). Written at the top of
+  the new repo's CLAUDE.md and PLAN; it decides which of 3 … 8 the piece runs.
+- **2.2 The repo.** Under `github.com/elosine`; public or private his call (public → the gitignore for personal things —
+  the call's screenshots, the fonts); LICENSE and .gitattributes carried; the push rule ASKED, per repo (D5's precedent —
+  pushing is outward-facing, never inherited).
+- **2.3 The names.** The working title (may come later) · the session default · the piece chain · the package name · the
+  Reaper project guard · the two ports, the next pair in the lineage (#3 5100/4600 · #4 5200/4700 · #5 5300/4800 · #6
+  5400/4900) · the loopMIDI prefix · the folder name under `C:\Users\jwloy\GitHub`. One table in NAMING.md §1.
+- **2.4 The method docs carried whole,** one provenance line each: AI_METHODOLOGY · SESSION_HYGIENE · PLANNING_METHOD ·
+  HOW_WE_WORK · SESSION_PROTOCOL · MORPH_NOTES while the morph tool lives · the checkpoint and postclear commands ·
+  .gitignore · .gitattributes — with the harvest's lines in them: H-1 the MACHINE LESSONS block and THE VERIFICATION
+  RECIPE as a doc · H-2 his reading and working habits · H-3 the pasted-image rule · H-6 "a gate counts presence, not the
+  look" — into HOW_WE_WORK.
+- **2.5 The record docs from skeletons,** empty but shaped: CLAUDE.md (the state line; the standing practices checked
+  heading by heading against the last piece's) · README · PROJECT_JOURNAL (seven sections, §3's principles carried) ·
+  PLAN (its § 0 = this protocol, for the profile) · PLANNER · RUNNING_LOG (§1) · COMPOSITION_NOTES · NITS · SWEEP_LIST
+  (H-5; the `his` test rows of the last piece closed, never carried) · PERFORMANCE_NOTES.
+- **2.6 Outside the repo:** a `<prev>-<port>` entry in `.claude/launch.json` for the unfinished previous piece, removed
+  when it is finished (H-4) · the planning repo (`composition-planning-and-notes`): the piece in "pieces in play", its
+  dates in `next.md` / `plan.md` at his word — only his dates.
+- **Done when:** `/session-start` runs in the new repo and finds the state line, the plan's § 0 and the names. Nothing of
+  code yet.
+
+**One-time — this plan's work, not the protocol's:**
+
+- **2.7 The skeletons made once** from this repo's docs, emptied — they do not exist yet. Where they live is the protocol's
+  home question (parked). ☑ 2026-10-03 — made in the home: `composition-system/skeletons/` (CLAUDE.md · README · the journal ·
+  PLAN · PLANNER · RUNNING_LOG · COMPOSITION_NOTES · NITS · SWEEP_LIST · PERFORMANCE_NOTES · PROTOCOL_DEVIATIONS; `_ABOUT.md` says how).
+- **2.8 The AI's memory notes:** the cross-piece ones (how he reads · the machine limits · the planning repo pointer) moved
+  to his user-level CLAUDE.md, so a new repo does not start without them. `todo`.
+
+---
+
+## 3. The engine copied forward — `written 2026-10-03` (agreed with him, RUNNING_LOG §791)
+
+**What this is:** the first container of THE INSTRUMENT layer, for a COPY-FORWARD start (a from-a-sandbox or fresh start skips
+it or takes a part). The new repo takes the WHOLE working engine from the piece just finished — the composer app · the sandbox ·
+the notation engine · print · video · the tools · the probes · the Reaper bridge — copied byte for byte, proven to work before
+one line changes, then turned to the new ensemble (the re-palette), then given empty-but-valid data files so every panel opens.
+
+**Result when done:** the new repo's app boots on its own two ports; every panel opens with zero console errors; the save
+round-trips; every test battery is green or CLASSIFIED (re-pointed · retired · "needs this piece's pages"). Nothing sounds yet
+(4 the instruments · 5 the calibration). Nothing notates the new ensemble yet (6).
+
+**The data (2026-10-03):** what the last port did — `PORT_FROM_TEMPUS.md` (2026-09-17), RUNNING_LOG §12 … §16, one day on Opus:
+a measured SURVEY first (460 files; the engine 12 MB, the piece data 38 MB left behind; the coupling in three kinds — A the
+palette proper · B small per-instrument tables inside the tools, wider every piece because each piece builds tools that know
+instruments · C the piano as a ROLE in twelve modules) · step 1 the copy, 265 / 265 byte-identical by `cmp`, his uncommitted
+source files taken from HEAD · step 2 the copy proven whole with the OLD palette in (151 files staged and deleted by list; 22
+green, 8 red, every red accounted for; the one real defect a test dependency the leave list had named as a tuba artefact —
+`morph_tuba_baseline.json`) · step 3 the re-palette by ONE script asserting 44 match counts (it refused twice, rightly: CRLF, a
+miscount), then 19 files of stragglers by a rule · step 4 the recipes and six skeleton banks, the cello verbatim, `palette_check`
+born (157) · step 5 the running app (71 routes · the panels · the quiet piano features CLICKED · the ensemble warn with a
+control); five checks green at step 2 red after the re-palette, all #5's tests bound to #5's palette. Its steps 6 · 7 belong to
+container 6, its step 8 to 2 and 10. What bit later, now the harvest's eight items H-7 … H-14: batteries carried red a third
+time · two dead viewers copied · a `TypeError` on every bare load · a validator warning · one red battery case · the lane CSS
+unchecked (lane 8 landed on the English horn, §183) · no bundled font for ♭ ♯ ♮ (a box in the film, §699) · the piano role
+decided per module.
+
+**Six calls, his to reverse (agreed 2026-10-03, "c3 good"):** CARRY ALL, USE SOME stands — only piece DATA stays behind (scores ·
+actuals · the rack · IR pages · the measurement banks) · the last port's copy list and leave list become the TEMPLATE LISTS,
+kept in the protocol and updated each run · the order copy → prove → re-palette → skeletons → verify is kept ("prove before
+changing" is the rule that earned its keep) · the harvest's fixes go in AT the copy as steps, not carried broken · the piano
+role is decided ONCE, in the profile (2.1), as a "roles" line every module reads · the container ends with an app that opens
+and saves — not plays, not notates.
+
+**Recurring — the protocol's step 3, at every copy-forward start** *(the survey on Fable; the rest Opus, from the written steps):*
+
+- **3.0 The survey.** From the source's NAMED HEAD commit: the engine vs the piece data · the coupling in three kinds, each table
+  BY FILE AND LINE — A the palette · B the per-instrument tables inside the tools (`palette_check`'s list is the seed; the survey
+  re-finds what grew) · C the roles · what is modified or untracked in the source and HIS. Out of it: this run's copy list and
+  leave list, from the template lists (3.7) plus the survey's differences — written into the new repo's PLAN § 0.3.
+- **3.1 The copy, byte-exact** (one commit). The guard first: `git status` in the source — only the KNOWN-his paths may be
+  modified; any other path on the copy list modified or untracked → stop and ask. The list by `git ls-files` (loose and ignored
+  files cannot come along). One `tar` pipe; **`cmp` every file against its source, N / N identical.** His uncommitted source
+  files taken from HEAD (`bank/panel_snapshots.json`). The copied `launch.json` is inert — the server runs by environment
+  (`PORT=…`) until 3.3; the source's ports are NEVER bound. `npm install`.
+- **3.2 Prove the copy whole, before one line changes** (nothing committed). Staged from the source's HEAD, never its working tree:
+  its data (the banks · the actuals · its scores · its IR pages · its probe schedules) and the goldens its batteries name (the
+  recipe in `notation/ir/README.md`); the staged list written to the scratchpad BEFORE the first copy, the deletion by that list.
+  The server on the new port by environment. Every battery run on the OLD palette; a red re-run in the source, read-only.
+  **Every battery CLASSIFIED once, into a table in RUNNING_LOG and the new NITS:** green · red in the source too → retired (off
+  the copy, its reason) · bound to the source piece's pages or palette → re-pointed at 6 or retired · NEW red → explained
+  (byte-identical copy ⇒ the inputs). Never carried red again (H-7). The lesson kept in the step: **a missing test dependency is
+  invisible to `cmp`** — the copy was faithful to a list wrong by one. The staged list deleted exactly; `git status` clean.
+- **3.3 The re-palette** (one asserted script, one commit; the script's text into RUNNING_LOG). The script asserts EVERY match
+  count before it writes a byte; each find / replace translated to its file's OWN line endings, never the file to the script's.
+  **Kind A:** `TRACKS` in orchestral score order · the lane `<div>`s · the track `<select>` · the curve-window titles (each
+  replaced as one block) · the abbreviation map · the title · the session default at every site · `layoutVersion` + 1 with the
+  loud "THIS SAVE WAS WRITTEN FOR A DIFFERENT ENSEMBLE" warn by track IDS (the lane count cannot catch it) · the ports — the
+  server · the sandbox · the `.bat` · `.claude/launch.json` (the new pair · a throwaway `+1` · the unfinished previous piece's
+  `<prev>-<port>` entry, 2.6) · `package.json` · the Reaper project guard · **the composer's lane CSS — the `nth-child` rules,
+  one per lane, the count = `TRACKS` (H-12)**. **Kind B:** every table on the survey's list rewritten with the new keys — open
+  strings · strike defaults · the articulation maps · the beating ORDER and breath / bow ceilings · the colour tables (one hue
+  family per pair) · the trill stand-in · the alias table · what the survey added. **Kind C:** the roles from the profile's
+  "roles" line (2.1), ONE lookup, not a test per module (H-14). **The straggler audit** — the old ports · the old guard · the old
+  session · the old piece name · the old instruments — by the rule: *a default argument or a write guard is a PARAMETER and
+  becomes this piece's name; a test fixture stays and goes to NITS; a coincidence is left.* `node --check` on every changed file;
+  `palette_check` green (its asserts extended to the lane CSS). The source's instrument names may stay in comments as provenance
+  unless they claim behaviour.
+- **3.4 Recipes and skeleton banks** (one commit). `sandbox/instruments.js` rebuilt by a script that keeps the helper blocks and
+  any CARRIED instrument's measured rows verbatim and replaces the header and the table; `node --check` before a commit. Every
+  other value marked `PROVISIONAL — 4 / 5`; technique keys = the notation registry's names (a key that reaches the IR is already
+  drawable; the roster keys not in the registry listed by `palette_check`); ports with the lineage's prefix, distinct from every
+  live rack's. **A shared MECHANISM never shares a MEASUREMENT** (the double bass carried none of the cello's). The banks keyed by
+  instrument skeletoned: shape and metadata kept, only the carried instrument's rows, a `_provenance` line naming what was
+  dropped; a table keyed by TECHNIQUE keeps only the carried instrument's rows (a flute's `staccato` must not become the
+  bassoon's). Recorded material of the old piece emptied. `bank/panel_snapshots.json`: one take loaded per panel, or the file
+  moved to `bank/reference/` and an empty valid one started — RUNNING_LOG says which. The day-one stub written BY THE APP, never
+  by hand. `palette_check` · `roster_check` green (pending voices listed).
+- **3.5 Verified in the running app** (AI_METHODOLOGY rule 4). The servers from `launch.json` on the new ports; the previous
+  piece's checked and never bound. The route battery, every `<script src>` and `/api/*` 200 (a POST-only 404 read in the handler,
+  not called a defect) · the save API round trip on a throwaway name, the files seen and deleted · `Composer initialized`, zero
+  console errors (Web MIDI denied is the pane's policy) · `TRACKS` · `META_LAYER` · the lane count ON THE PAGE · `laneCanPlay`
+  probes above and below each range · every panel opens · **the quiet roles CLICKED, not assumed** · the ensemble warn fired on an
+  old-ensemble save WITH A CONTROL (the own save warns nothing) · the sandbox's menu. Results as a table; **defects that only
+  running found get their own paragraph**; the checks green at 3.2 and red after 3.3 classified into 3.2's table.
+- **3.6 The record.** RUNNING_LOG one § per step, written as each step ends · NITS: for every copied file the source's live
+  bullets, dated, plus this port's own (the quiet roles · the fixtures · every classified red) · the tool docs that travel with
+  the code, one provenance line each; NAMING §1 the names (2.3) · CLAUDE.md § Apps rewritten from the source's, with the
+  standing warnings (print and video share the frame math · the curve-channel map is cached · a server route keeps the engine it
+  started with · the lane CSS) · PLAN § 0 container 3 `done` · the report to him: what runs · what is quiet and why · what is
+  provisional · what he does next (4 · 5).
+- **Stop and ask him:** a path to copy is modified or untracked in the source · a battery red here and green there, the cause
+  not a missing file · a role that one line cannot make quiet · anything that needs a decision about the music.
+- **Done when:** the app opens and saves on its own ports, every panel clean; the batteries' table has no unexplained red;
+  everything pushed.
+
+**One-time — this plan's work, not the protocol's:**
+
+- **3.7 The template lists** — the last port's copy list and leave list (`PORT_FROM_TEMPUS.md` step 1), written into the
+  protocol as THE TEMPLATE LISTS with the harvest's changes: `clusterview.html` · `chordview.html` · `docs/instrument_map.json`
+  OFF the copy list (H-8) · the eight batteries red in the source too — `test_coords` · `cresc_check` · `test_extract_played` ·
+  `ir_extract_golden` · `test_notate_block` · `test_playability` · `test_midiplayer` · `test_sonify_core` — onto the leave list
+  (H-7) · `tools/morph_tuba_baseline.json` ON the copy list (§13's lesson). `todo`.
+- **3.8 Four small engine fixes made HERE, before the copy** (Opus, one commit; none touches the layout, the shield stands): the
+  bare-load `TypeError` at `sequence_ui.js:1652` (H-9) · `model_bank --validate`'s `provenance.palette` warn (H-10) ·
+  `test_animobj.js`'s case since §454 (H-11) · `palette_check` reads the composer's lane CSS (H-12). `todo`.
+- **3.9 The bundled font for ♭ ♯ ♮** (H-13) — an open-licence font in `notation/app/fonts/`, in the page's stack and the film's
+  and print's font lists, so the app, the film and the print draw the same sign. At the FIRST copy, in the new repo: it changes
+  the look of the film and the print, and this piece's are locked (D56). `todo`, placed in 3.3.
+- **3.10 The roles helper** (H-14) — ONE lookup by the profile's "roles" line in place of twelve `instKey === 'piano'` tests. At
+  the first copy, or on 9's list if a role becomes a palette property. `todo`.
+- **3.11 Written into the protocol** — this section. ☑ 2026-10-03.
+
+---
+
+## 4. The instruments — `written 2026-10-03` (agreed with him, RUNNING_LOG §792; his flag LG-344 in 4.9)
+
+**What this is:** the sound side made real — the second container of THE INSTRUMENT layer. Every instrument of the new piece
+gets a library on the machine · a loopMIDI port · a Reaper track with its preset loaded · its plugin state set as text (curve
+copies or slots, the FX baseline) · a recipe in `sandbox/instruments.js` derived FROM THE RACK. It ends with the first sound
+from the app. Not yet balanced — that is 5.
+
+**Result when done:** a note on every track plays from the composer app, on its own port, on the right channel · every
+recipe's technique keys are the notation registry's; `palette_check` and `roster_check` green · what could not be derived
+(keyswitch notes, mute order, CC0 numbers) is marked PROVISIONAL with the step that verifies it.
+
+**The data (2026-10-03):** what the last run did — PLAN § 0c · 0e, RUNNING_LOG §11 · §19 … §42 · §48, 2026-09-17 … 18, two
+days, him at the machine: the instrumentation first (D1), then the libraries named by him (D6), one looked-up fact each from
+the record (piece #2's journal for ARO, piece #3's manuals for Xsample); one library arrived mid-build and became its own lane
+(the bowed vibraphone, D12) · ten `LG` ports made BY HIM in loopMIDI, verified by name, the `b` ports for the SI2 second
+instances (D9; the bassoon's need found only at the preset count) · the rack by the bridge — tracks by idempotent scripts in
+score order (`make_tracks.lua` · `make_perc_tracks.lua`), HE loaded every preset in each plugin's own browser (the one step no
+script can do, §36), the AI read each load back and set the rest as text, one method per plugin family: UVI (SI2) its XML
+state — curve copies cloned, the FX baseline, channels and ports derived into the recipe (`apply_uvi_parts.js`) · Kontakt
+(Xsample) by Lua through the bridge — the four curve slots (D11), the `.nki` names read back · Spitfire (ARO) its XML state —
+the family preset holds the instruments as articulations, the selection read back and banked, the key maps from his hover and
+a meter sweep · the recipes DERIVED, not typed — from the running rack, from his Preset Menu screenshots (Xsample: 39 · 88
+entries), from piece #2's catalog through a generator (catalog · selection · `apply_perc.js`, D7) · dead ends kept: the
+Spitfire patches encrypted (§33) · a base64 decoder that read only the header line (§34) · "cloning yes, a new family no"
+(§35) · a BOM in the sweep (§42) · a flattened backslash in a Lua (§28) · what bit later: the ports cannot be automated (H-15,
+the harvest's one item here; his ask — each percussion instrument its own port) · a track taking `LGPerc` on ALL channels
+(§221) · the percussion menu missing thirteen instruments (§212).
+
+**His word at the goal (LG-344):** *"Number four is good. We'll just keep it as is for now … if there's minor or easy to come
+improvements at this port, let's take those on, but not a major overhaul at this time."* — and THE FLAG, 4.9 below.
+
+**Five calls, his to reverse (agreed 2026-10-03):** the order instrumentation → libraries → ports → tracks → his loads → read
+back → recipes derived → the first sound · the division of labour as the rule — he does the loads, the ports and the
+screenshots, the AI everything that is text · one how-to per plugin family kept in the protocol; a new library of a known
+family costs a load and a read-back, a new FAMILY is flagged in the profile as real work · H-15 looked into once, before the
+next rack; if loopMIDI cannot be driven the ports stay his and the step says so · the catalog · selection · generator
+pattern (D7) is the model for any multi-instrument lane.
+
+**Recurring — the protocol's step 4, at every start with a sound side** *(him at the machine for three things — the ports ·
+the loads · the screenshots; everything that is text is the AI's):*
+
+- **4.0 The instrumentation and the libraries.** The instrumentation fixed first. Each instrument a LIBRARY named by him; one
+  looked-up fact each from the record (the collation, 9), never a search. The plugin FAMILY per library named (UVI · Kontakt
+  · Spitfire · new) — a new family is real work, flagged in the profile. A library still to acquire is flagged; the start runs
+  on the installed ones and takes the rest as they arrive.
+- **4.1 The ports.** From the STANDARD NAME SET (4.8) with the lineage's prefix (2.3), so nothing is renamed later. Made in
+  loopMIDI — by the AI if H-15 finds a way, else by him. Verified by name from the app. A second instance (a `b` port) where a
+  library's preset count needs one — ask the count BEFORE the tracks are made.
+- **4.2 The tracks by the bridge.** Idempotent scripts, score order, one row per instrument or lane: input on its port and
+  channel, armed, monitoring on, 0 dB, FX bypassed except the convolver (his rule, #5 §275). The rack file is his; committed at
+  his word.
+- **4.3 The loads — his.** Every preset in the plugin's own browser. He says "done loading"; the AI reads back, pushes nothing.
+- **4.4 The state as text, one how-to per family.** UVI: the XML state — the curve copies cloned, the FX and gain baseline.
+  Kontakt: Lua through the bridge — the four curve slots, the `.nki` names read back. Spitfire: the XML state — the family
+  preset holds the instruments, the selection read and banked, the key maps from his hover and a meter sweep. Each how-to a
+  page the protocol keeps (the first pages of the knowledge base, 4.9 · 4.10).
+- **4.5 The recipes derived from the rack, never typed.** Channels, ports and presets read from the running rack; the Preset
+  Menus from his screenshots where the plugin cannot be read; a multi-instrument lane by catalog → selection → generator (D7).
+  Technique keys the registry's; the roster keys not in the registry listed. Everything not derivable marked PROVISIONAL with
+  its verifying step. `palette_check` · `roster_check` green.
+- **4.6 The first sound.** A note on every track from the app, in HIS Chrome (the pane has no Web MIDI); the capture read to
+  confirm what the app sent.
+- **4.7 The record.** RUNNING_LOG per step · RACK_SETTINGS.md (every hand-set value and how to revert it) · NITS · each
+  library's lessons onto its page (4.9).
+- **Stop and ask him:** a library not installed · a preset count · a new plugin family · a port name that clashes with a live
+  rack.
+- **Done when:** every track sounds from the app; the recipes green; the rack saved by him.
+
+**One-time — this plan's work, not the protocol's:**
+
+- **4.8 The standard port name set** — one table, role → port name, the prefix rule; and H-15 looked into once (can loopMIDI
+  be driven by a script). The "minor and easy" improvement he allowed. `todo`.
+- **4.9 THE FLAG — THE INSTRUMENT KNOWLEDGE BASE** (his words whole: LG-344). A bigger project, in six parts: a METHODOLOGY PER
+  LIBRARY (how to collect the ranges · how to find the articulation switches · the idiosyncrasies, round robins first) · a
+  PROFILE PER INSTRUMENT he owns, GROWING EVERY PIECE (the range · the CC numbers and what they switch · the volumes; each use
+  adds something) · a ROLLING WORK LIST per instrument (a probe of every round-robin sample for volume and sound, the first
+  entry) · AI AUTOMATION RESEARCH (the information gathered and confirmed by the AI; beyond Lua, perhaps MCP) · THE PORTS
+  standardized and AI-made (4.8 · H-15) · THE DATA CONTAINERS (the JSON, how things are housed). **NOT NOW** — *"I have too much
+  composition to do."* Taken up when he has time; its home the collation (9). `flag`.
+- **4.10 The three how-tos written from the record** (RUNNING_LOG §20 … §42: UVI · Kontakt · Spitfire) as the first pages of
+  4.9 — cheap, Opus, from what is already logged. `todo`.
+- **4.11 Written into the protocol** — this section. ☑ 2026-10-03.
+
+---
+
+## 5. The calibration — `written 2026-10-03` (agreed with him, RUNNING_LOG §793; his flag LG-347 in 5.10)
+
+**What this is:** the rack brought to an ABSOLUTE standard, so what he hears while composing is a realistic balance and one
+monitor level serves every piece — the third container of THE INSTRUMENT layer. Here it was done TWICE: 0d (relative — every
+instrument to the median, measured on REC at −12 dB, no proven meter → a rack 12 dB hot and clipping) and then 1b (to a
+standard, in one day). The protocol takes 1b's method, once.
+
+**Result when done:** a −20 dBFS reference in the rack and a proven meter, his system volume set ONCE on it · every
+instrument's card measured on the channels the piece plays — loudness two ways · pitch · bend range · the velocity curve · the
+fader curve — the round robins judged · trims to the absolute target (a tutti fff at −20 LUFS-S, under −1 dBTP) · the
+velocity remap at the written span · the dynamics law's data in the bank (the fader curves for every instrument, the dynamics
+table) · `RACK_SETTINGS.md`, every hand-set plugin value and how to revert it · a QC battery in one command.
+
+**The data (2026-10-03):** his scope first (PLAN § 0d, his restatement): *"realistic aural feedback … not the #1 priority, I
+don't want to overinvest"* — a demo; the parts will be played by people. **0d** (§43 … §61, 2026-09-18): the probe designed
+simply · a REC track · a clipping pre-flight that caught the SI2 brass over 0 dBFS at CC7 127 (the masters to −6 dB) · the run,
+which overturned the mechanism — and HE stopped the flip to CC7 (D13: velocity IS the dynamic; the horn and trumpet fixed at the
+knob, 5 → 26 dB) · the trims and the remap, velocity-only · his ear, "sounds good" · 0h skipped at his word (D14). **1b** (§75
+… §91, 2026-09-19): the trigger — *"significantly louder than previous pieces … a bit of a shambles … a testing and qc verifying
+plan that is not too onerous but reliable"* · the standard K-20 / BS.1770 (rejected: a master trim · a limiter · "to the
+quietest" or "to the median", both relative — how two racks came to differ by 12 dB) · 1b.1 the reference proven to three
+decimals, and three tracks REC had never captured · 1b.2 the card, 103 then 209 notes, every pitch within 2 cents, every bend
+measured · the vibraphone's "register" a ROUND ROBIN scattering 13.8 dB — switched off; four instruments' in the end · 1b.3
+every instrument DOWN 6.6 … 21.3 dB; the sleigh bells +10.6 dBFS on one note; two horn tracks never trimmed · §85 the Dynamic
+fix had never reached the channels the piece plays · 1b.4 the span 10 → 17 → 12 at his word (the rule: the range at the tightest
+pitch minus the register spread) · 1b.5 the per-part pass NOT met (18.8 → 7.7 dB) and CLOSED at his word as the method's floor:
+tutti −19.1 LUFS · −9.7 dBTP · 1b.6 the one-command QC battery planned, approved, NEVER BUILT. **1e** (§137 … §144, 2026-09-20):
+the fader curves measured in 0d had been written for the vibraphone alone (§130); then THE DYNAMICS LAW — a struck note's
+dynamic is the velocity, a shaped note is struck at mf with its fader normalized 0 → 127 on a curve channel — proven in his
+rack; `docs/DYNAMICS_LAW.md` the first read for any sound work. **The harvest's four** (H-16 … H-19): the recipe-block marker
+checked before the first probe · the card's trim written so a re-run cannot double-count · a technique's UVI Dynamic on the main
+part AND its curve copies · the probes' default port a parameter.
+
+**His word at the goal (LG-347):** *"Container 5 is good … good for five now"* — and THE FLAG, 5.10 below.
+
+**Six calls, his to reverse (agreed 2026-10-03):** 1b's method once, as the standard; 0d's relative method retired; the reference
+first, always · K-20 / BS.1770 and the 12 dB span as the protocol's DEFAULTS, a piece changing them in its profile · the
+round-robin check per instrument BEFORE the card · the pass criterion a demo's — the tutti on target, nothing clipping, the
+per-part spread within the method's floor, not ±1 dB · the dynamics law and its data this container's deliverable, the tools
+that write it 7's · the QC battery a one-time build and the recurring last step; the card the seed of 4.9's profiles.
+
+**Recurring — the protocol's step 5, at every start with a sound side** *(one day on Opus; his ear at the end):*
+
+- **5.0 The scope, one sentence with him.** A demo for composing; the targets are the protocol's defaults — K-20 · a tutti fff at
+  −20 LUFS-S · under −1 dBTP · a 12 dB written span — unless the profile says otherwise.
+- **5.1 The reference in the rack.** A REF track: −20 dBFS pink noise (BS.1770-weighted) and a 1 kHz tone; REC at unity, the
+  master at 0; REC proven to capture EVERY track. Read back at −20.0 ± 0.1 — the meter proven before anything is measured
+  (`make_reference_audio.js` · `ref_track.lua` · `reference_run.ps1` · `analyze_reference.py` → `bank/reference.json`). His
+  system volume set ONCE on it.
+- **5.2 The pre-flight.** Every instrument at fff with CC7 127, for clipping (the SI2 masters' −6 dB) · every instrument's ROUND
+  ROBIN read and judged with him — off, levelled or kept (a musical fault as much as a measurement one) · a technique's UVI
+  Dynamic on the main part AND its curve copies (H-18) · the probes' port a parameter (H-19) · the recipe-block marker checked
+  (H-16).
+- **5.3 The instrument card.** One run through the harness on the channels the piece PLAYS: each pitched instrument at three
+  velocities on pitches every two or three semitones (the 3-pitch grid was the last fault), each percussion at full on its anchor
+  key; per note the loudness two ways — max-momentary and integrated, a sustaining instrument judged on the integrated — the f0
+  against the written, the bend range → `bank/instrument_card.json`; the trim at measurement written into the row (H-17).
+- **5.4 Trims to the absolute target.** Computed from the card (`compute_trims.js` → `bank/trims.json`), applied by the bridge
+  (`gen_apply_trims.js`), read back — EVERY track, including any added since the last pass. A sustaining family's register: the
+  fader takes the mean; the residual goes to the remap, or to CC7 at his word only (the vibraphone's exception, §91).
+- **5.5 The remap and the fader curves.** The velocity remap at the written span (`build_remap_card.js` → `velocity_remap.json`;
+  the rule: the range at the tightest pitch minus the register spread); the fader curves for EVERY instrument (§130's lesson) →
+  the dynamics table, 4 dB a written step (`dyn_table.js` · `dyn_table_check`); the decisions in the builder's header so a
+  rebuild cannot undo them.
+- **5.6 The verification through the app's own path.** A reference chord at pp · mf · ff · fff → `capture_composer_midi` → REC:
+  the tutti's LUFS-S and dBTP, the per-part spread. The pass is a demo's. Then HIS EAR on the chord; "sounds good" closes it.
+- **5.7 The QC battery, one command** (5.9). The tone read back · the card diffed against the last · the routing diff, capture
+  against recording · every score's peak and loudness. Run after any change to the rack, the recipes or the remap.
+- **5.8 The record.** RUNNING_LOG as each step lands · `RACK_SETTINGS.md` · the bank files committed · a new rule into
+  `DYNAMICS_LAW.md` · the card's lessons onto the instrument profiles (4.9).
+- **Stop and ask him:** a round robin, off or keep · the span · a residual beyond the floor · any flip of mechanism (D13 stands —
+  no CC7-for-everything).
+- **Done when:** the reference reads −20.0; the tutti on target, nothing clipping; the remap and every fader curve in the bank;
+  his ear on the chord; `RACK_SETTINGS.md` written.
+
+**One-time — this plan's work, not the protocol's:**
+
+- **5.9 The QC battery built** (1b.6 — planned here, approved, never made): `tools/qc_rack.js`, one script from the pieces that
+  exist (the reference run · the card · the routing dump · the loudness analyzer), a report in `docs/qc/` diffed against the last.
+  Opus. `todo`.
+- **5.10 THE FLAG** (his words whole: LG-347): the standards HARDENED AND REFINED per instrument and per sample library — Xsample ·
+  IRCAM SI2 · Spitfire · UVI — recalibrations, more detail, the round robin again. Longer term, when he has time; ONE knowledge
+  base with 4.9 (the card its calibration page; the per-library methodology its calibration idiosyncrasies). `flag`.
+- **5.11 Three small fixes made here** (H-16 · H-17 · H-19), with 3.8's four in one Opus commit. `todo`.
+- **5.12 Written into the protocol** — this section. ☑ 2026-10-03.
+
+---
+
+## 7. The composing tools made the piece's — `written 2026-10-03` (the goal agreed with him, RUNNING_LOG §794; the steps the AI's — his word, "we can skip the sub steps from now on")
+
+**What this is:** the tools the engine carries — the strikes drawer · the sequence drawer · the morph · texture · the harmony
+strip · the rest — made THIS piece's, NOT all up front: one tool at a time, as the composing needs it, each used by him before
+the next. The instrument layer's last. At the START it is small: the dynamics law read, the per-instrument data in place, the
+first tool the first section needs working through the law. Then it runs as a LOOP through the composing.
+
+**Result when done (at the start):** every tool that writes sound is under the dynamics law BEFORE its first use (H-28 — the
+crescendo tool here never was) · the per-instrument data every tool reads is in place from 3 · 4 · 5 — the tables inside the
+tools · the recipes' technique keys · the remap and the dynamics table · ranges and breath or bow ceilings · the harmonic-series
+data · the percussion selection · the loop for the next tool is written. Thereafter the container is never "done": it closes
+with the piece.
+
+**The data (2026-10-03):** phase 1 here, PLAN § 1c … § 1u — twenty items in eight days, 2026-09-19 … 26, in the order of
+compositional need: the strikes drawer (1c) → the sequence drawer (1d, built to its end in a day, his tests step by step) → the
+volume fix and THE LAW (1e, from his ear: *"sitting at the high dynamic. No waves"*; `docs/DYNAMICS_LAW.md`, the first read for
+any sound work — *"AI forgets what we established before"*) → one scale (1g) → the bloom on a take, the vibraphones in it, the
+morph's breaths (1h · 1i · 1j) → the counterpoint route (1l) → the texture take (1m) → dynamics, the save structure, the clock,
+the harmony strip (1n … 1q) → three morph builds (1r · 1s · 1t) → the vibraphones' pitches (1u). TWO METHODS MET: 1l built END TO
+END and set aside at his verdict in use (*"this tool is not working the way I expected it"*, §214); 1m then built ONE STEP AT A
+TIME, each used by him first (§220) — the method from there. 1q grew from his test the same day (1q.5 … 1q.8, §316 · §317).
+Every build carried THE SHIELD and its own check (`sequence_check` 180 · `dyn_table_check` 51 · `test_snapshots` 30 ·
+`roster_check` · `vibes_pitch_check` 65 …). What bit: a server route keeps the engine it started with — "restart the server"
+after a `morph.js` or `model_bank.js` change (§181) · the curve-channel map is cached, found twice (§75 · §139) · the piano-role
+features (3's H-14) · two items left `todo` — 1f the crescendo tool under the law (H-28), 1k the morph's peaks. The morph tool
+has its own memory for its revision: `docs/MORPH_NOTES.md` §3 the verbatim log, §4 the digest of what an all-purpose tool has and
+lacks (carried from #5; the pattern for any tool he wants revised).
+
+**His word at the goal:** *"7 good we can skip the sub steps from now on"* — from here the GOAL is agreed with him and the steps
+are the AI's, written without a round trip, his to reverse in the file.
+
+**Five calls, his to reverse (agreed 2026-10-03):** the container is a LOOP, not a one-time step — at the start only the law, the
+data and the first tool · the method fixed as the protocol's: one tool at a time · used by him before the next (1m over 1l) · the
+planning method per tool · the shield on every layout change · the law before the first use · one checklist of the per-instrument
+data a tool needs, derived from `palette_check`'s tables and the banks · the tool docs travel with the code (3) and are rewritten
+only when a tool changes for the piece; `MORPH_NOTES` keeps its role · the two `todo`s placed — 1f becomes the first-use rule, 1k
+goes to `MORPH_NOTES` §4.
+
+**Recurring — the protocol's step 7** *(the AI's steps, his to reverse):*
+
+- **7.0 The law read.** `docs/DYNAMICS_LAW.md` whole before any tool is touched; the two kinds of note · the curve channels · the
+  cached map (`curveDirty()`) · how a claim is proved (§6). THE SHIELD's recipe (`layout_shield --write` on HEAD, `--diff --expect`
+  after) and the checks the piece owns, named in CLAUDE.md.
+- **7.1 The data checklist.** One list (7.8) walked once: for every tool the piece will use, the per-instrument data it reads is
+  present for every instrument — the tables inside the tool (3.3's kind B) · the recipe's technique keys · the remap and the
+  dynamics table (5.5) · ranges and the breath / bow ceilings · the harmonic-series data (the spectrum check) · the percussion
+  selection. A gap is filled or marked PROVISIONAL with its step.
+- **7.2 The first tool.** The one the first section needs (here the strikes drawer, 1c: six stages, each his word), adapted for
+  the ensemble — the players · the ordinary voice · the hear modes through the remap · the seats of a two-voice lane · the series
+  banner — and brought under the law. His test before the next.
+- **7.3 The loop, per tool, at compositional need.** His need in his words (the sketch pad, verbatim) → the planning method
+  (`docs/PLANNING_METHOD.md`: phase 1 the data, the top line, one step at a time; a device sheet where a notation is involved) → the
+  build, one commit per step, THE SHIELD in each, the tool's own check added or extended; a build that changes the ENGINE's
+  rendering (`morph.js` · `model_bank.js` · `sequence.js`) is opt-in — every stored render byte-identical, or his word → "reload the
+  tab" or "restart the server", said → HIS ONE TEST → his verdict IN USE → grown from his test the same day, or set aside at his word.
+  One tool at a time; the next is laid out only after the last is used.
+- **7.4 The tool docs.** The carried docs (3.6's provenance line) rewritten only where the tool changed for this piece; a new tool
+  gets its doc (`SEQUENCE_TOOL.md`'s shape — what it does · the recipe it saves · its check). The morph's remarks into
+  `MORPH_NOTES.md` §3 as said, §4 the digest.
+- **7.5 The record.** RUNNING_LOG as each build lands — and through the composing (the lab journal does not pause); his musical ideas
+  into COMPOSITION_NOTES verbatim; the journal's table and the state lines at every wrap.
+- **Stop and ask him:** a tool that needs a new mechanism in the engine (every stored render moves) · anything that would flip the
+  law (D13 · Rule 1 … 5) · anything about the music.
+- **Done when:** at the start — the first tool works on this ensemble through the law, his test passed, the loop written; after it,
+  the container closes with the piece.
+
+**One-time — this plan's work, not the protocol's:**
+
+- **7.6 1f, the crescendo tool under the law** (H-28; `cresc*.js` write no `cc7Abs` / `velAbs`) — fixed at the next piece's start,
+  before the tool is touched; the first-use rule's first case. `todo`.
+- **7.7 1k, the morph's peaks against the sequence** — into `MORPH_NOTES.md` §4 for the revision. `todo`.
+- **7.8 The data checklist written once** from `palette_check`'s nine tables and the banks' key sets. `todo`.
+- **7.9 Written into the protocol** — this section. ☑ 2026-10-03.
+
+---
+
+## 6. The notation set-up — `written 2026-10-03` (the goal agreed with him, RUNNING_LOG §795; the steps the AI's) — THE ANIMATED SCROLLING SCORE's member
+
+**What this is:** the notation half of the stack made the new ensemble's — THE SCORE layer's first, laid out here for the
+ANIMATED SCROLLING SCORE (pieces #4 … #6). A new score type (the electronics score of LG-340 … LG-345) gets its own member
+when its piece designs it. At the start it is THE REGISTRY AND THE PROOF: the ensemble registry · the rules registry carried as
+data · a new staff type if the ensemble needs one · the batteries classified · save → IR proved · both exporters run. The
+piece's specific notation comes with the composing, by DEVICE SHEETS — a loop like 7's, in the score layer.
+
+**Result when done (at the start):** a test save written BY THE APP → an IR valid against its source and complete → the page
+renders in the notation app with the right clefs, transpositions and brackets → one print page and one video frame exported and
+looked at · the presentation score's pitch form (in C or transposed) and the clefs by register decided at the registry · the
+rules gates green — `check_rules` · the shield with its expect list · the edges · the main notation file's discipline written.
+
+**The data (2026-10-03):** **0g · 0i** (the port's day, RUNNING_LOG §17 · §18): the transpose SIGN checked in the code before the
+table was written (positive = written above sounding; #5's bass clarinet the fix) · a realization override that would have thrown
+in print and video, found · the batteries identical to the pre-palette baseline · both exporters run · 0i's first test save
+written from memory, the extractor saw none of its eleven notes — *"the save's shape is the only thing that can bite later"* →
+the test save written by the app's own insert paths; `tools/test_written_pitch.js` kept. **2a** (2026-09-25, §330 … §338): the
+survey of what the port carried against what had to be built · the percussion inventory · his design of the seven-line staff, the
+precedent measured (Bone Alphabet — the lines twice a staff's), Ferneyhough's alternation the order · the register scan of every
+lane · DECIDED in C (§336) · a fixed frame on every print page (§337) · `piece-lgmf` the MAIN file. **2c** the page edges as rules
+(screen: the constant sweep, a tile; print: the cut placed by the objects; every drawn kind names its edge class) · **2e** the
+engraving rules as DATA (`rules.json` → the generated `ENGRAVING_RULES.md`, `check_rules`, the ladder, THE DEVICE SHEET) · **2j** the
+file discipline (the IR derived from the save by one recorded build; the protos from the same draft) · **2o** the percussion
+staff's rule set (§639 … §667): three invented rules taken back to the standard by his eye within a day. **The harvest's eight**
+(H-20 … H-27): a curve label clears the ink at its x (a rule, from five `--labelDy` hands) · every vertical rule in `layout.js`
+assumes a five-line staff ±2 — a new staff reads each against its own outer lines · standards first on a new staff (his word §666)
+· THE LOCK per approved figure, written as he approves (only the EH's first figures were ever locked) · the shield's expect list
+(a lined-staff rule moves tuba pages' part 4) · technique keys registered as material uses them (83 unregistered here) · the pitch
+form decided at the registry · the clefs by register never built — the ottava carried the piece.
+
+**His word at the goal:** *"6 good"*.
+
+**Six calls, his to reverse (agreed 2026-10-03):** at the start the registry · the proof · the exporters · a new staff type if
+needed — nothing of the piece's notation, which comes by device sheets as the composing reaches it · the rules registry carried
+whole as data; a new ensemble adds ROWS, never code numbers; the generated page the read · a new staff type laid out with him, 2a
+and 2o's way, every vertical rule read against the staff's own lines, the standards first · the lock per figure and the shield's
+expect list standing steps of the score layer's loop · the pitch form and the clefs by register decided at the registry, once ·
+H-20 built at the next piece's first curve label; H-21 … H-27 written into the steps as method; nothing built now.
+
+**Recurring — the protocol's step 6, for the scrolling score** *(the AI's steps, his to reverse):*
+
+- **6.0 The registry.** `notation/registry/ensemble.json` rewritten: the parts in score order (= `TRACKS`), id · short · clef ·
+  `transpose` (the SIGN checked in `layout.js` first: positive = written above sounding) · staves · groups (the brackets) · the
+  lanes of a two-staff player. DECIDED HERE, once: the presentation score's pitch form (in C / transposed) · the clefs by register
+  (a tenor clef if the ensemble wants it, 6.10) · the staff types. `notate_section` refuses a registry that disagrees with the
+  score's tracks — that is the check.
+- **6.1 The rules registry carried.** `rules.json` (the anchors · the column · the objects · the colours · the faces · the pitch
+  picture · the technique words · the ladder) and `page_rules.json` (every drawn and animated kind's edge class) carried WHOLE; the
+  new ensemble's rows added — never a code number; `gen_engraving_rules.js` → the generated page, the read; `check_rules` green.
+  THE DEVICE SHEET (`PLANNING_METHOD.md`) the way in for every new notation.
+- **6.2 A new staff type, if the profile needs one.** Laid out with him: the inventory (what the lane plays in the newest save) ·
+  his design · the precedent measured · the order of the lines. Built as a RULE SET: every vertical rule read against the staff's
+  OWN outer lines — stems · the flag law · the dynamic row · the frame · the accent row · the lane clamp (H-21); the normal staff's
+  standards first, a bespoke rule only where one cannot apply (H-22); the shield's `--expect` names the carried pages it moves, a
+  per-part hash proves the rest (H-24).
+- **6.3 The batteries.** 3.2's classification applied: the goldens staged by the recipe in `notation/ir/README.md`; the re-pointed
+  batteries run; the retired ones gone; `test_written_pitch` with its control; the screen and the print edge gates on the test page.
+- **6.4 Save → IR proved.** A 30 s test save WRITTEN BY THE APP (three lanes + META; one of each object kind the first section will
+  use; a marker) → `notate_section` → `ir_validate --against-source --complete` → the page in the notation app's picker — the
+  clefs, the transpositions, the brackets looked at. A failure is fixed on the SAVE side now; classifier work filed for the loop.
+- **6.5 The exporters run.** `export_print --pages 1-2` on the test page · `export_video --probe`, one frame through resvg, looked
+  at — the film draws with resvg, the gates with Chrome (a fault can pass every gate and be in the film).
+- **6.6 The main file's discipline** (2j). ONE main notation file per piece, derived from the current save by one recorded build
+  (`provenance.build`; `tools/reextract.js` the runner); the protos cut from the same save; written into the new PLAN as THE FILE
+  DISCIPLINE.
+- **6.7 The loop, per notation, as the composing reaches it.** A DEVICE SHEET (line 1a) → the rules rows → the extractor's flag or
+  hand → the shield → his eye on a proto page → THE LOCK on each figure as he approves it (H-23; the §589 · §590 block the pattern)
+  → the main file carries it. Technique keys registered in `techniques.json` as material uses them; `palette_check` lists the
+  unregistered (H-25). A decision that needs a line in the performance notes → a row in `PERFORMANCE_NOTES.md`.
+- **6.8 The record.** `notation/ir/README.md` (what lives there · the staging recipe · the batteries' table) · the NOTATION_* docs'
+  provenance · `PERFORMANCE_NOTES.md` the tracker · RUNNING_LOG.
+- **Stop and ask him:** the pitch form · a clef by register · a staff type's design · any rule that changes the look of a LOCKED
+  page (D56: a change is the whole loop, 8).
+- **Done when:** the test page renders right in the app; the gates green; one print page and one video frame looked at; the
+  discipline written.
+
+**One-time — this plan's work, not the protocol's:**
+
+- **6.9 H-20, the curve-label rule** — a curve label clears the ink at its x by the standard gap (the five `--labelDy` hands become
+  a rule); the mark-vs-slur pass tests the arc across the mark's WIDTH. Built at the next piece's first curve label. `todo`.
+- **6.10 The clefs by register** (2a.6; H-27) — a tenor clef in the engine and an automatic clef per stretch, if the next ensemble
+  wants it; decided at 6.0. `todo`.
+- **6.11 Written into the protocol** — this section. ☑ 2026-10-03.
+
+---
+
+## 8. The deliverables pipeline — `written 2026-10-03` (the goal agreed with him, RUNNING_LOG §796; the steps the AI's) — THE ANIMATED SCROLLING SCORE's member
+
+**What this is:** everything made FROM the locked notation for the world to receive — the audio render · the film · the
+performance notes page · the print score · the archive and its tags · the submission package (his). THE SCORE layer's second,
+laid out for the scrolling score; the electronics score will have its own member. The pipeline exists end to end here and was
+proven once, on Draft 01, in three days (2026-10-01 … 03); the protocol carries it with its gates and the two print templates.
+
+**Result when done (for a piece):** the notation LOCKED and tagged first · then every deliverable from the ONE main page at that
+tag, agreeing with each other — the page · the audio · the film · the print · each through its gate, archived in its own folder
+with a README naming what made it and its hash, and tagged · a change to the notation reopens all of it by the written loop
+(8.9), never improvised.
+
+**The data (2026-10-03):** RUNNING_LOG §687 … §779; the journal §2's blocks IF THE SCORE MOVES AGAIN (checkpoint #12) and HOW A
+CHANGE TO THE PAGE IS MADE (checkpoint #13); `docs/RENDER.md`. THE LOCK at his word, a tag (§687 · §688). THE AUDIO: his own
+playback captured → exported → rendered through a COPY of his rack, the boost capped at +6 dB at his word (§689; RENDER.md §1 ·
+§4). THE FILM in seven steps (PLAN § 2b-F): a TEST STRETCH first (§689; his call on the right-edge overhang kept the standard, §690
+· §691) · the opening and ending decided (the 4 s lead-in, no title card; the last page held under the tail, §692) · the close-ups
+by recipe (seed 7, a third in close-up; the halves re-pointed at this ensemble, §693 · §694) · the whole film, 9 min to render ·
+his watch-through found FOUR faults — resvg dropped the long curve paths (§695) · the audio delay was a timestamp, not silence
+(§696) · a late trumpet in the save (§697 · §698) · a box for ♭, no bundled font (§699) · archived with its README and tagged
+(§700). THE NOTES PAGE (§703 … §761): piece #5's page the start, every image re-cut at ONE scale from the zoomed score
+(`capture_lane.js`, §704 · §747), the text HIS by dictation over two days, mostly from his phone; a § and an LG per edit; the
+full page in chat only on demand. THE PRINT in six steps (PLAN § 2b-P, §766 … §773): the frame's first run (the edge gate found two
+real faults on the locked IR) · the COVER template and the INSTRUCTIONS template (the page itself, the break measured) · the proofs
+→ his four calls → the whole render, 7 min, the five gates → his eye → THE FINAL BARLINE (the screen's edge bar had printed as a
+barline and the gate counted it green — a new MEDIUM re-means the furniture, §772) · archived and tagged. THE SUBMISSION his
+(LG-255; §775 … §777), its record kept LOCAL, gitignored — a public repo. Three tags: `-notationLock_1.0` · `-film_1.0` ·
+`-print_1.0` (+ `-submitted_1.0`). **The harvest's four** (H-29 … H-32): a film gate, resvg against Chrome · a test stretch holds
+every kind, every render keeps its own file, the hash in the README · the two print templates the pipeline's own · the lead-in as
+real silence (`adelay`), in the exporter already.
+
+**His word at the goal:** *"8 good"*.
+
+**Six calls, his to reverse (agreed 2026-10-03):** the order lock → audio → a test film stretch → the film → the notes page → the
+print → the archive and tags → the package (his) · every deliverable has a GATE and an ARCHIVE folder with a README (the command,
+the hash); a new medium's furniture looked at for what it MEANS there, not counted present · the two print templates the pipeline's
+own — the cover from `cover.json`, the instructions ARE the notes page · the notes page his text by dictation, the AI's part the
+images at one scale and the method · H-29 built at the next piece's test stretch, H-30 · H-32 written as method · nothing of 8 runs
+before the lock; a change after it is the whole loop.
+
+**Recurring — the protocol's step 8, for the scrolling score** *(the AI's steps, his to reverse):*
+
+- **8.0 The lock.** His word on the notation; the main page at a commit; an annotated tag `<Piece>-notationLock_1.0`, pushed; the
+  shield's `--expect` the main page alone. From here any change is 8.9.
+- **8.1 The audio** (`RENDER.md` §1, three commands). His own ▶ playback captured in HIS Chrome (`capture_composer_midi.js`) →
+  `export_midi.js` → `render_reaper.js --score … --up --maxUp 6` through a COPY of his SAVED rack, Reaper open and the bridge up;
+  the float measured (dBTP · LUFS · LRA), the boost at his cap; the WAV linked as the page's ♪ render; the MIDI committed; the
+  register line (§4).
+- **8.2 The test film stretch.** `export_video.js` on ≈ 30 s that contains EVERY kind the film draws (H-30); the film gate (8.10)
+  on its pages; his eye and ear; a standard's edge case put to him with the options (the overhang's precedent, §690).
+- **8.3 The film's furniture — his calls.** The opening (the lead-in; a title card or none) · the ending (the last page held under
+  the tail, `--t1` the WAV's end) · the wide shot alone or close-ups (`realizations.video-cut.halves` re-pointed at the ensemble; a
+  close-up test for his eye; the cut list by recipe, `tools/make_cut.js`, seeded).
+- **8.4 The whole film.** One render under ITS OWN FILE NAME (`-rN`; never overwritten); both streams from 0.000, the lead-in by
+  `adelay`; sampled every minute for the kinds (the curves in every sequence); his watch-through; a fault → the fix → a new name →
+  the compare at moments.
+- **8.5 The notes page.** The last piece's `docs/notation_instructions/` carried as the START; the title and the instrumentation
+  this piece's at once; `docs/PERFORMANCE_NOTES.md` (the tracker) read for what the notes must cover and what it lacks against the
+  locked page; every image re-cut from THIS piece's zoomed score at ONE scale (`capture_lane.js --part … --t … --span a:b [--gutter]`,
+  the `--w` it prints) — then HIS dictation, section by section: his words verbatim, spelling and punctuation repaired, a moved fact
+  flagged and left; a § and an LG per edit; the full page in chat ONLY on demand; served at the score server's URL; a
+  self-contained copy for his phone on request.
+- **8.6 The print** (`print/score/build.sh`). `--proof` first — the frame's first run on the piece (`check_print_frame` to the
+  ensemble; the edge gate on the locked IR: a fault here is real) · the cover from `print/cover/cover.json` (title · the subtitle
+  lines · the name; `make_cover.ps1 -Format`) · the instructions from the notes page (`--insBreak` named or measured) → his calls
+  (the cover's rows · the density `--sec` · page 1 · the instructions' one page) → the whole render, the five gates (frame · front ·
+  pdf · pages · edges) → his eye on the whole PDF (the score server serves `print/`; `print_look.js` for a page) → THE FINAL
+  BARLINE the standard (`objects.finalBarLine`) → the approved folder.
+- **8.7 The archive and the tags.** Per deliverable: `…/approved/<date>-<draft>/` — the file (gitignored if large; **back it up**)
+  + README (the command · the inputs' commit · the sha256) · an annotated tag `<Piece>-<Draft>-<kind>_1.0`, pushed; the names his
+  to rename.
+- **8.8 The package — HIS.** No AI work on the call or the form unless asked (LG-255); the record (the form's screenshots, the
+  confirmation) kept LOCAL in a gitignored folder — a public repo; a copy into his Drive by the memory note's route (his Chrome).
+- **8.9 If the score moves again — the loop** (≈ 20 min + the renders): he Saves → R (the recorded build re-run on a fresh copy of
+  the save) → the gates (`check_rules` · the lock · the marks · the shield) → the audio (8.1) → the film under a NEW name (8.4) →
+  his watch-through → `build.sh --rebuild-ir` (8.6) → new archive folders and tags. An AI edit of his save: the file's hash
+  checked, no `-work` copy, ONE field, then HIS Reload in the composer.
+- **Stop and ask him:** the lock itself · every furniture call (8.3) · the cover's words · the density · any change to a locked page ·
+  anything of the call.
+- **Done when:** the four deliverables archived and tagged from the same page; the package in his hands.
+
+**One-time — this plan's work, not the protocol's:**
+
+- **8.10 The film gate** (H-29): sample pages rasterized the film's way (resvg) and compared with Chrome's — a kind present in one
+  and absent in the other fails. Built at the next piece's test stretch. `todo`.
+- **8.11 The two print templates** (H-31) — made here (`print/cover/cover.json` + `make_cover.ps1`; the instructions read from the
+  page's own `--w` / `--frame`), carried with the engine (3); the protocol's reference names them. ☑ exist 2026-10-03.
+- **8.12 Written into the protocol** — this section. ☑ 2026-10-03.
+
+---
+
+## 9. The collation — `written 2026-10-03` (the goal agreed with him, RUNNING_LOG §797; the steps the AI's)
+
+**What this is:** ONE cross-piece reference kit with an INDEX, so the next piece *"can just move forward without having to do a
+full search and retrieval"* (LG-337). UNIVERSAL layer. Not exhaustive — his word. It is also the answer to a question parked
+three times today: WHERE cross-piece things live — the protocol sits in this repo "until it has a home"; the skeletons (2.7) have
+none; the shared electronics engine (LG-346) asks the same.
+
+**Result when done:** a home that is not a piece, named by him. In it an INDEX page — each entry what it is · where the
+authoritative copy lives (repo · path · commit) · when last refreshed · who uses it. Written there, once, because they have no
+home: THE LAWS · the MODULE MANIFEST · the protocol and its skeletons · the instrument knowledge base's shelf · the LATER backlog,
+dated. Pointed to, not copied: the engraving rules (`rules.json` here, the standard as data) · the colours (piece #1) · the
+manuals (piece #3) · the maps (piece #2) · the method docs · the tool docs' one canonical, piece-neutral copy. A new piece's
+`/session-start` reads the index first.
+
+**The data (2026-10-03):** six repos. The tool docs copied forward at every port with a provenance line and still describing
+Tempus; `HOW_WE_WORK` cites #5's §s; `MORPH_NOTES` §1 … §2 say "this piece" and mean Tempus (H-33). His two examples: the curve
+colours fetched back from piece #1; piece #2's notation surfacing here; today's — piece #2's cells for the electronics pieces
+(LG-341), piece #5's ±1 st measurement grounding a value here (H-35). The first standards written as DATA exist only in this repo:
+the engraving rules (2e) · the dynamics law (1e) · the device sheet method · `palette_check`'s tables. The laws scattered in the
+code and the notes (H-34): a chord is a list of VOICES, not a set of pitches · a player is (lane, seat), not a lane · a placed object
+carries its whole provenance on its marker · the dynamics asked of ONE module (`dyn_table` + `morph_dyn`) · ONE breath generator
+(two copies today: `sequence.js dealSpan` · `morph.js buildCarrier`) · an actual rendered in ONE place (the server's engine went
+stale, §181). The module boundary: the unit of port is the whole engine — CARRY ALL, USE SOME; a manifest is the modest enhancement
+he is open to (§789); no shared engine package — parked (RUNNING_LOG §5). The harvest's twelve LATER items (H-36 … H-47).
+
+**His word at the goal:** *"9 good"*.
+
+**Six calls, his to reverse (agreed 2026-10-03):** the home is ONE new repo, not a piece, his name for it — the protocol, the
+skeletons, the laws, the manifest, the knowledge base and the index live there; whether the shared electronics engine lives there
+too or beside it is LG-346's question, his later · an INDEX, not copies — pointers to the authoritative copy; only what has no
+home is written there · the spine is the boundary SYSTEM vs PIECE, named module by module in the manifest; no shared engine package
+yet · not exhaustive — the first pass is the three harvest items, the top line's list and the two flags' seeds; the rest when a
+piece sends us to it (1.4) · the LATER backlog moves there as the standing list, refreshed at each harvest (10) · the laws' text and
+the manifest are Fable's work; the gathering and the index Opus's, from written lists.
+
+**Recurring — the protocol's step 9** *(the AI's steps, his to reverse):*
+
+- **9.0 The home.** One repo under `github.com/elosine`, his name; 2.2's rules (public or private his call; the gitignore). Its
+  CLAUDE.md the grammar: an index · pointers · the few things written once · NEVER a piece's record (that stays in the piece).
+- **9.1 The index.** `INDEX.md`: one line per entry — what · where (repo · path · commit) · last refreshed · who uses it. Its
+  sections: the method docs · the laws · the standards as data (`rules.json` · `page_rules.json` · `DYNAMICS_LAW.md` · the device
+  sheet) · the colours · the manuals · the maps · the tool docs · the instrument knowledge base · the module manifest · the protocol ·
+  the backlog.
+- **9.2 The laws, written once** (Fable). H-34's six and the dynamics law's one sentence, each with its source § and the piece it came
+  from; a law changes only by a dated entry under it.
+- **9.3 The module manifest** (Fable the boundary, Opus the scan). For each module of the engine — the composer app's scripts · the
+  sandbox · the notation lib · the tools · the probes · the bridge: what it needs (files · banks · registry rows · per-instrument
+  tables) · what depends on it · SYSTEM or PIECE. CARRY ALL, USE SOME stays the rule until the manifest says a module can travel alone.
+- **9.4 The tool docs' canonical home** (H-33). One piece-neutral copy per tool doc; the rules' sources piece-qualified (`#5 §182`);
+  a piece carries a pointer and its own deltas, not a rewritten copy.
+- **9.5 The instrument knowledge base's shelf** (4.9 · 5.10 — the flags; here only the shelf). A page per library (4.10's three
+  how-tos the first) · a profile per instrument (the card's rows; H-35's measurement its first cross-piece line) · the rolling work
+  list. Filled when the flags are taken up.
+- **9.6 The backlog.** The harvest's LATER items, dated, as the standing list; refreshed at each harvest (10); a "later" taken up
+  leaves by a dated line.
+- **9.7 When a piece sends us to an old piece** (1.4). The material fetched once, pointed to in the index with the same line shape;
+  the fetching piece's RUNNING_LOG says what and why.
+- **9.8 The record.** The index's "last refreshed" · the piece's RUNNING_LOG · the home's own log one line per change.
+- **Stop and ask him:** the home's name and visibility · a law's wording · anything that would move a piece's RECORD out of its repo.
+- **Done when:** the repo exists with the index, the laws, the manifest's first version, the protocol moved in, the backlog; a new
+  piece's `/session-start` reads it.
+
+**One-time — this plan's work, not the protocol's:**
+
+- **9.9 The home made** at his word (the name his) and the protocol moved in — `NEW_PIECE_PROTOCOL.md` the protocol's copy there,
+  this file kept here as the record of its drafting with a pointer; `HARVEST.md`'s shape as the harvest's template; 2.7's
+  skeletons made there from this repo's docs. Opus. ☑ 2026-10-03 — **the home is `composition-system`** (github.com/elosine,
+  PUBLIC — his name and his word): the protocol in `protocol/` · the harvest's template · the skeletons · `INDEX.md` (9.1, first
+  version) · `BACKLOG.md` (9.6) · `LOG.md` (9.8) · its CLAUDE.md the grammar.
+- **9.10 The laws written** (Fable). `todo`.
+- **9.11 The manifest's first version** — the dependency scan of the forty scripts and the tools (Opus), the boundary named (Fable).
+  `todo`.
+- **9.12 H-33, the tool docs' canonical copies** (Opus; the sources piece-qualified). `todo`.
+- **9.13 Written into the protocol** — this section. ☑ 2026-10-03.
+
+---
+
+## 10. The protocol's upkeep — `written 2026-10-03` (the goal agreed with him, RUNNING_LOG §798; the steps the AI's)
+
+**What this is:** the last step of every start, and the close of every piece: what the run taught goes back INTO the protocol —
+his "expandable" (LG-337). The other end of the harvest: 1 reads the finished piece into the next start; 10 writes the start's
+lessons into the protocol. Two runs are coming (§786): the first wrote the protocol — today; the second TESTS it — the Decibel
+piece's set-up, his to-do's step 2. Container 10 is where that test's findings land.
+
+**Result when done (per run):** the protocol in its home changed by a DATED ENTRY per lesson under the step it touches — a step
+amended · a step added · a template list changed · a call reversed; never a silent rewrite · a DEVIATIONS register, one line each
+time a start did something the protocol did not say — his "flexible", measured · a VERSION line (v1 is this file, 2026-10-03; a
+piece's profile names the version it ran; the Decibel set-up is v1's test and makes v2) · the open list shortened or added to.
+
+**The data (2026-10-03) — today's own run, and what it leaves open:** the open list, now mostly PLACED: the protocol's HOME → 9.9 ·
+the skeletons (2.7) → 9.9 · the module manifest → 9.3 · 9.11 · the LATER backlog → 9.6 · LG-346's two questions → 9 and that
+piece's design · the Decibel score type → its own design, not this plan · the from-a-sandbox kind's middle (LG-338, "the basic
+machinery") → OPEN · 2.8 the AI's memory notes to his user-level CLAUDE.md → OPEN (10.7). Two things never done in this piece,
+PLACED now (10.6): 0h, the gate that closes the set-up (every track sounding from the app through its own port; skipped at his word,
+D14) = 4.6 the first sound · 0f, the AI's MIDI generation path = 8.1's capture → export → render route and 5's probes. The feeders 1
+already names: the journal's Learned lists (five here) · NITS § HELD · MORPH_NOTES §3 → §4. Today's process lessons, in the record:
+plain words, the one decision (§788) · the goal with him, the steps the AI's (§794) · one container per exchange · a FLAG as the
+shape for a "not now" item (4.9 · 5.10) · a composition note taken verbatim the moment it comes, whatever is in hand (LG-340 …
+LG-347, eight in one sitting).
+
+**His word at the goal:** *"10 good"*.
+
+**Six calls, his to reverse (agreed 2026-10-03):** 10 runs TWICE per piece — at the end of the start, while fresh, and at the piece's
+close with the harvest; each a short sitting · a lesson is a dated entry under its step; the IDs stay stable; a reversed call is
+written as reversed, not erased · the protocol carries a version; a piece names the one it ran; v2 comes out of the Decibel set-up ·
+the deviations register is kept DURING a start, one line at a time, never reconstructed after · 0h → 4.6 and 0f → 8.1 + 5 · 2.8
+done with 9.9, when the home is made.
+
+**Recurring — the protocol's step 10** *(the AI's steps, his to reverse):*
+
+- **10.0 At the end of a start** — the containers the profile took done (the first sound · the first tool · the test page), one
+  sitting: the deviations register (10.2) read line by line; each lesson a DATED ENTRY under the step it touches (`— 2026-… : …`); the
+  template lists (3.7) and the port name set (4.8) updated where the run changed them; a call reversed written as reversed; the
+  version bumped if a step changed (10.3).
+- **10.1 At the piece's close, with the harvest (1).** The journal's Learned lists · NITS § HELD · MORPH_NOTES §4 → sorted: METHOD → a
+  dated entry under its step here · a TOOL FIX → the harvest (take now, for 3 or 7) · a RULE → 6's registry rows or the laws (9.2) · a
+  LESSON about an instrument → the knowledge base's shelf (9.5).
+- **10.2 The deviations register — kept DURING the start.** In the piece: `docs/PROTOCOL_DEVIATIONS.md` (or a section of its PLAN § 0),
+  five columns — date · step · what the protocol said · what was done · why. One line at the moment of the deviation. Read at 10.0.
+- **10.3 The version.** The protocol's header line: `vN — date — what changed`; a piece's profile (2.1) names the version it ran; a
+  bump when a step changes, with the entry that changed it; v1 = this file as of 2026-10-03.
+- **10.4 The open list.** Kept at the protocol's foot: shortened as items are placed, added to from the deviations; a placed item
+  leaves by a dated line, as the harvest's "later" does.
+- **10.5 The record.** The home's log one line per change (9.8) · the piece's RUNNING_LOG § for the sitting · the planning repo's thing
+  for the methodology, at his word, when a step of it closes.
+- **Stop and ask him:** a reversal of a call that was his · a change to a UNIVERSAL step (1 · 2 · 9 · 10) · the scope of a version bump.
+- **Done when:** the entries written under their steps, the version named, the open list current, the home pushed.
+
+**One-time — this plan's work, not the protocol's:**
+
+- **10.6 The never-done items placed:** 0h → 4.6 the first sound · 0f → 8.1 + 5's probes; the header's line amended. ☑ 2026-10-03.
+- **10.7 2.8, the AI's cross-piece memory notes** (how he reads · the machine limits · the planning repo pointer) → his user-level
+  CLAUDE.md, with 9.9. `todo`.
+- **10.8 The deviations register's template** (the heading and the five columns) into the skeletons (2.7 / 9.9). ☑ 2026-10-03 — `skeletons/docs/PROTOCOL_DEVIATIONS.md`.
+- **10.9 v1 declared** — the header line. ☑ 2026-10-03.
+- **10.10 Written into the protocol** — this section. ☑ 2026-10-03. **THE PLAN IS WHOLE.**
+
+---
+
+## The plan is whole — 2026-10-03
+
+Ten containers in three layers, each goal agreed with him on the day (RUNNING_LOG §786 … §798; §791 … §798 one § per container),
+the steps written: § 1 the harvest (run and triaged, `docs/HARVEST.md`) · § 2 the repo and its kit · § 3 the engine copied forward ·
+§ 4 the instruments · § 5 the calibration · § 6 the notation set-up (the scrolling score's member) · § 7 the composing tools · § 8 the
+deliverables pipeline (the scrolling score's member) · § 9 the collation · § 10 the upkeep. **His to-do's step 1, "Draw Up the
+Plan", is done; its step 2, "Set Up the Decibel Piece", is THE PROTOCOL'S FIRST RUN (v1's test).**
+
+**What is left to DO before or during that run — the one-time items, by who** (at his word; nothing started):
+
+- **Opus, small, in THIS repo:** 3.8 + 5.11 seven engine fixes (H-9 · H-10 · H-11 · H-12 · H-16 · H-17 · H-19) · 4.8 the standard port
+  name set + H-15 looked into · 4.10 the three how-tos from the record · 5.9 the QC battery (`qc_rack.js`) · 7.6 1f under the law ·
+  7.7 1k → MORPH_NOTES · 7.8 the data checklist.
+- **The home (9.9), his name first:** the new repo · the protocol moved in · the skeletons (2.7) · the index (9.1) · the backlog (9.6)
+  · H-33 the tool docs' canonical copies (9.12) · 10.7 the memory notes · 10.8 the deviations template — Opus; the laws (9.10) and the
+  manifest's boundary (9.11) — Fable.
+- **At the first copy, in the new repo:** 3.7 the template lists applied · 3.9 the font · 3.10 the roles helper · 6.9 H-20 · 6.10 the
+  clefs by register (if wanted) · 8.10 the film gate.
+- **His flags, not now:** 4.9 the instrument knowledge base · 5.10 the standards per instrument and per library.
+- **Open:** the from-a-sandbox kind's middle ("the basic machinery", LG-338) · where the shared electronics engine lives and how it is
+  ported into three pieces (LG-346) · the Decibel score type (its design).
+
+**— 2026-10-03, later the same day: THE HOME IS MADE** — `composition-system`, public, his name (9.9 ☑ · 2.7 ☑ · 10.8 ☑; 9.1 the
+index's first version · 9.6 the backlog · 9.8 the log in place). Of the home's line above, still to do: 9.12 H-33 the tool docs'
+piece-neutral copies · 10.7 the memory notes (his read of the lines first) · 9.10 the laws · 9.11 the manifest. Everything else
+in the list stands as written.
