@@ -17,6 +17,7 @@
 | 4 | `for_seven_tubas` | seven tubas | `d203801` |
 | 5 | `septet_2026` | the Tempus septet | `ba318e1` |
 | 6 | `septet_LGMF_2026` | _Recombination_, the Lake George septet | `33ba534` |
+| 7 | `decibel_TENOR_2026` | the Decibel piece — the protocol's FIRST RUN (v1); made 2026-10-04, the kit only, no code yet | `7a77bde` (2026-10-04) |
 
 Beside them: `composition-planning-and-notes` (the composer's planning lists) · `live-electronics-engine` · `live-electronics-system` (the shared live-electronics engine of the three electronics pieces — a module set, not a piece; see The module manifest)
 (the sandbox for the live-electronics kind of start).
