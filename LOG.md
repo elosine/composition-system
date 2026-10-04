@@ -11,3 +11,5 @@
 - 2026-10-03 — **The push rule decided:** push after every commit (the composer's *"a"*; `CLAUDE.md` § Git). `skeletons/CLAUDE.md`:
   the "How he reads" line softened at his word — the reading preferences kept, so that paragraph is no longer word for word
   piece #6's. This log's first line corrected: the skeletons are eleven docs. (`septet_LGMF_2026` RUNNING_LOG §801)
+- 2026-10-03 — **The protocol: 10.7 · 2.8 ☑** — the cross-piece notes written into the composer's user-level `CLAUDE.md` at his word
+  (three dated sections; this repo's pointer among them). (`septet_LGMF_2026` RUNNING_LOG §802)

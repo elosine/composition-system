@@ -196,7 +196,7 @@ new repo starts with none — the cross-piece ones move to his user-level CLAUDE
   home question (parked). ☑ 2026-10-03 — made in the home: `composition-system/skeletons/` (CLAUDE.md · README · the journal ·
   PLAN · PLANNER · RUNNING_LOG · COMPOSITION_NOTES · NITS · SWEEP_LIST · PERFORMANCE_NOTES · PROTOCOL_DEVIATIONS; `_ABOUT.md` says how).
 - **2.8 The AI's memory notes:** the cross-piece ones (how he reads · the machine limits · the planning repo pointer) moved
-  to his user-level CLAUDE.md, so a new repo does not start without them. `todo`.
+  to his user-level CLAUDE.md, so a new repo does not start without them. ☑ 2026-10-03 — done with 10.7.
 
 ---
 
@@ -873,7 +873,9 @@ done with 9.9, when the home is made.
 
 - **10.6 The never-done items placed:** 0h → 4.6 the first sound · 0f → 8.1 + 5's probes; the header's line amended. ☑ 2026-10-03.
 - **10.7 2.8, the AI's cross-piece memory notes** (how he reads · the machine limits · the planning repo pointer) → his user-level
-  CLAUDE.md, with 9.9. `todo`.
+  CLAUDE.md, with 9.9. ☑ 2026-10-03 — at his word (*"yes as written"*): three dated sections in `~/.claude/CLAUDE.md` —
+  putting things to him (four lines) · this machine (five) · working on a piece (three, the home's pointer among them). How he
+  reads and the planning repo pointer were in that file already.
 - **10.8 The deviations register's template** (the heading and the five columns) into the skeletons (2.7 / 9.9). ☑ 2026-10-03 — `skeletons/docs/PROTOCOL_DEVIATIONS.md`.
 - **10.9 v1 declared** — the header line. ☑ 2026-10-03.
 - **10.10 Written into the protocol** — this section. ☑ 2026-10-03. **THE PLAN IS WHOLE.**
@@ -906,3 +908,6 @@ Plan", is done; its step 2, "Set Up the Decibel Piece", is THE PROTOCOL'S FIRST 
 index's first version · 9.6 the backlog · 9.8 the log in place). Of the home's line above, still to do: 9.12 H-33 the tool docs'
 piece-neutral copies · 10.7 the memory notes (his read of the lines first) · 9.10 the laws · 9.11 the manifest. Everything else
 in the list stands as written.
+
+**— 2026-10-03: 10.7 · 2.8 ☑** — the cross-piece notes are in his user-level CLAUDE.md, the lines read by him first.
+Still to do of the home's line: 9.12 the tool docs' piece-neutral copies · 9.10 the laws · 9.11 the manifest.
