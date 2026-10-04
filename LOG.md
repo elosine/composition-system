@@ -8,3 +8,6 @@
   the skeletons, eleven docs (2.7), the deviations register among them (10.8) · the backlog, H-36 … H-47 (9.6) · this log.
   Not yet here: the laws (9.10) · the module manifest (9.11) · the tool docs' piece-neutral copies (9.12) · the knowledge
   base's shelf (9.5). (`septet_LGMF_2026` RUNNING_LOG §800)
+- 2026-10-03 — **The push rule decided:** push after every commit (the composer's *"a"*; `CLAUDE.md` § Git). `skeletons/CLAUDE.md`:
+  the "How he reads" line softened at his word — the reading preferences kept, so that paragraph is no longer word for word
+  piece #6's. This log's first line corrected: the skeletons are eleven docs. (`septet_LGMF_2026` RUNNING_LOG §801)

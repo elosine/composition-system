@@ -39,7 +39,7 @@ but I want to do a good, solid job and not leave out things now that might bite 
 leaving everything we can for when the time comes."* Keep the conversation at the
 conceptual level; consult the code yourself.
 
-**How he reads (his user-level CLAUDE.md, 2026-08-24):** mildly dyslexic — succinct
+**How he reads (his user-level CLAUDE.md, 2026-08-24):** succinct
 language, clear spatial division between chunks, short lines, one idea per chunk, bullets
 first. A one-line TL;DR leads any reply over two paragraphs. One step at a time.
 

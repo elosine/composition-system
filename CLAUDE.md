@@ -58,4 +58,5 @@ short lines, one idea per chunk, one decision at a time.
 ## Git
 
 - Stage explicit paths only, never `git add -A`.
-- **Push: asked per repo, never inherited** (the protocol's 2.2). Not yet decided for this repo — ask him.
+- **Push automatically after every commit** — the composer, 2026-10-03, his answer *"a"* to the question
+  "push after every commit, or ask each time?". Asked for this repo, as the protocol's 2.2 says; never inherited.
