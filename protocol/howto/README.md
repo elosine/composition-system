@@ -12,6 +12,6 @@
 | [kontakt.md](kontakt.md) | Kontakt libraries — Xsample, Spitfire Ricotti: slots, channels, CC7, articulations, round robin |
 | [spitfire-aro.md](spitfire-aro.md) | Spitfire's own plugin — Abbey Road Orchestra Percussion |
 | [measuring.md](measuring.md) | the loudness run: the card, the trims, the dynamics curves |
+| [uvi.md](uvi.md) | UVI Workstation — IRCAM Solo Instruments 2, Prepared Piano 2: parts, the `b` instance, the loads, the state as text, the Dynamic Amount dial |
 
-**Not written:** UVI Workstation (IRCAM Solo Instruments 2, Prepared Piano 2) — no piece since #6 has used it. Its record:
-`septet_LGMF_2026` RUNNING_LOG §20 … §23 (the parts as XML, the `b` instances) · §56 · §85 (the "Dynamic Amount" trap).
+**UVI written 2026-10-20** at the Switch~ piece's container 4 (the harvest's H6-24), from `septet_LGMF_2026` RUNNING_LOG §20 … §23 · §56 · §85 and piece 4's flute.
