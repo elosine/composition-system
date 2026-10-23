@@ -17,14 +17,17 @@
 | 4 | `for_seven_tubas` | seven tubas | `d203801` |
 | 5 | `septet_2026` | the Tempus septet | `ba318e1` |
 | 6 | `septet_LGMF_2026` | _Recombination_, the Lake George septet | `33ba534` |
-| 7 | `decibel_TENOR_2026` | the Decibel piece — the protocol's FIRST RUN (v1); made 2026-10-04, the kit only, no code yet | `7a77bde` (2026-10-04) |
+| 7 | `decibel_TENOR_2026` | the Decibel piece, *Approaching* — the protocol's FIRST RUN (v1); done 2026-10-20, to be submitted when the TENOR call opens; its `docs/HARVEST.md` (H6-1 … H6-62) | `9796edd` (2026-10-20) |
+| 8 | `switch_2026` | the Switch~ piece — the protocol's SECOND RUN (v1, by piece 7's register → v2); its start done 2026-10-23 (containers 2 … 6); the knowledge base's first page `docs/INSTRUMENTS_READOUT.md` | the start's close, 2026-10-23 |
+
+*The composer's numbers since 2026-10-11 are ONE LOWER from the tubas on (3 the tubas · 4 *Scattered Substance* · 5 *Recombination* · 6 *Approaching* · 7 the Switch~ piece); this table keeps the old numbers until his word.*
 
 Beside them: `composition-planning-and-notes` (the composer's planning lists) · `live-electronics-engine` · `live-electronics-system` (the shared live-electronics engine of the three electronics pieces — a module set, not a piece; see The module manifest)
 (the sandbox for the live-electronics kind of start).
 
 ## The protocol
 
-- **The new-piece protocol, v1** — here: `protocol/NEW_PIECE_PROTOCOL.md` · refreshed 2026-10-03 · used by every new piece's start.
+- **The new-piece protocol, v2** — here: `protocol/NEW_PIECE_PROTOCOL.md` · refreshed 2026-10-23 (the two runs' lessons as dated entries; 10.0 of the Switch~ piece's start) · used by every new piece's start.
   The record of its drafting: `septet_LGMF_2026/docs/plans/NEW_PIECE_PROTOCOL.md` (frozen) and its RUNNING_LOG §786 … §798.
 - **The harvest's template** — here: `protocol/HARVEST_TEMPLATE.md` · refreshed 2026-10-03 · used at a piece's close (step 1).
   Its first run: `septet_LGMF_2026/docs/HARVEST.md` @ `33ba534`.
@@ -98,7 +101,8 @@ piece #5 (the harvest's H-33). **The one piece-neutral copy of each is not made 
 
 *The shelf is not opened yet* — the protocol's 9.5, filled when the composer takes up his flags (4.9 · 5.10). Its seeds:
 
-- **the how-to pages** — here: `protocol/howto/` (`rack` · `kontakt` · `spitfire-aro` · `measuring`) · written 2026-10-04 · used at a new piece's containers 4 · 5. The tools they name: `decibel_TENOR_2026` `tools/` · `reaper/` · `probes/`.
+- **the read-out per instrument** — `switch_2026/docs/INSTRUMENTS_READOUT.md` (the protocol's 4.0, written 2026-10-20): what each instrument carries from pieces 4 · 5 · 6 and where — the knowledge base's FIRST PAGE, per piece until the shelf opens.
+- **the how-to pages** — here: `protocol/howto/` (`rack` · `kontakt` · `spitfire-aro` · `measuring` · `uvi`, the last written 2026-10-20) · written 2026-10-04 · used at a new piece's containers 4 · 5. The tools they name: `decibel_TENOR_2026` `tools/` · `reaper/` · `probes/`.
 - `decibel_TENOR_2026/bank/instrument_card.json` · `bank/trims.json` · `bank/ricotti_catalog.json` · `bank/aro_states/` — the Decibel rack measured (2026-10-04)
 
 - `septet_LGMF_2026/bank/instrument_card.json` @ `33ba534` — every instrument measured on the channels the piece plays
@@ -113,4 +117,4 @@ piece #5 (the harvest's H-33). **The one piece-neutral copy of each is not made 
 
 ## The backlog
 
-- **The standing "later" list** — here: `BACKLOG.md` · refreshed 2026-10-03 (from #6's harvest, H-36 … H-47) · read at each harvest
+- **The standing "later" list** — here: `BACKLOG.md` · refreshed 2026-10-23 (from #6's harvest, H-36 … H-47; from piece 6 *Approaching*'s, H6-46 … H6-53) · read at each harvest

@@ -32,3 +32,16 @@
   let-ring mark · `sub.` · the beam-vs-standard-stem at 378.5) — rule · journal §2 table — *if the devices return*
 - **H-46** The generated scores share one object-id space (`wc-1 …` across scores) — a per-score prefix when convenient — arch · NITS §75
 - **H-47** In Hear, CC7 127 pre-arms a channel 16 ms before its fader value — *"do not raise again unless heard"* — fix · NITS §158 · §162
+
+## From piece 6 *Approaching*, `decibel_TENOR_2026` — its harvest of 2026-10-20 (8; `docs/HARVEST.md` there, his read "all as proposed")
+
+*(The pieces' numbers below are HIS of 2026-10-11 — 6 = *Approaching*; the headings above keep the old numbering of their day.)*
+
+- **H6-46** THE GAIN STRUCTURE of a piece as a pass of its own after the notation (its DEC-52) · the sound-check MIXER (per class of object and the whole, live on the running engine) · the engine's long start measured · the sines' level in general · the tracker in a hall — the live-electronics discussion's list, the three electronics pieces' — method · its NITS "THE LIVE ELECTRONICS DISCUSSION"
+- **H6-47** A NEW ROLL EVERY PERFORMANCE (its DEC-46 · DEC-120: the returns' timings and processing, the strikes' answers) — the engine draws from a seed of the day; and THE PERFORMANCE ARCHITECTURE (one clock on the laptop broadcast to the iPads; the Node server the bridge) — parked until the Tempus septet's performance scores — arch · DEC-46
+- **H6-48** The staff rule's range by a MARKER, not absolute seconds (`rules.json` `staffLines.ensemble.ranges`) — rule · its NITS §302
+- **H6-49** The bank's housekeeping: no re-crop tool over a kept raw · no tool removes an orphan variant or a stale render · `M` makes ONE opening over a selection · a duplicated opening keeps its name — fix · its NITS §64 · §103 · §116
+- **H6-50** THE CONCERT SAFETY NET'S ANALYSIS MUST BE FOOLPROOF (his word): a per-player floor measured in the hall · a minimum length · a spectral sanity check · the verdict per opening on the engine's screen — feature · its NITS §71
+- **H6-51** The planning repo is written by other sessions: fetch before a push there — method
+- **H6-52** A session's page tools belong to the repo it was opened in; another repo's running pages are a session opened there — method
+- **H6-53** The staging and battery runner as ONE command for a start (`tools/port/stage32.sh` + `run_batteries.sh` + `classify.js` → a table) — the protocol's 3.2 in one script — feature
